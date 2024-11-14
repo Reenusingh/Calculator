@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc</title>
+   <link rel="stylesheet" href="styles.css">
+   
+</head>
+
+<body>
+    <div id="container">
+        <div>
+            <input type="text" id="display" readonly>
+        </div>
+        <div id="keys" class="row-1">
+            <div class="col-1"> <button id="all-clear" class="top-side" onclick="all_clear()">AC</button></div>
+            <div class="col-2"> <button id="remove" class="top-side" onclick="Remove()">X</button></div>
+            <div class="col-3"> <button id="postive-negative" class="top-side"
+                    onclick="Positive_Negative()">+/-</button></div>
+            <div class="col-4"> <button id="divide" class="top-side" onclick="Insert('/')">/</button></div>
+        </div>
+        <div id="keys" class="row-2">
+            <div class="col-1"> <button id="seven" onclick="Insert(7)">7</button></div>
+            <div class="col-2"> <button id="eight" onclick="Insert(8)">8</button></div>
+            <div class="col-3"> <button id="nine" onclick="Insert(9)">9</button></div>
+            <div class="col-4"> <button id="multi" class="top-side" onclick="Insert('*')">*</button></div>
+        </div>
+        <div id="keys" class="row-3">
+            <div class="col-1"> <button id="four" onclick="Insert(4)">4</button></div>
+            <div class="col-2"> <button id="five" onclick="Insert(5)">5</button></div>
+            <div class="col-3"> <button id="six" onclick="Insert(6)">6</button></div>
+            <div class="col-4"> <button id="sub" class="top-side" onclick="Insert('-')">-</button></div>
+        </div>
+        <div id="keys" class="row-4">
+            <div class="col-1"> <button id="three" onclick="Insert(3)">3</button></div>
+            <div class="col-2"> <button id="two" onclick="Insert(2)">2</button></div>
+            <div class="col-3"> <button id="one" onclick="Insert(1)">1</button></div>
+            <div class="col-4"> <button id="add" class="top-side" onclick="Insert('+')">+</button></div>
+        </div>
+        <div id="keys" class="row-4">
+            <div class="col-1"> <button id="modulous" onclick="Insert('%')">%</button></div>
+            <div class="col-2"> <button id="zero" onclick="Insert(0)">0</button></div>
+            <div class="col-3"> <button id="point" onclick="Insert('.')">.</button></div>
+            <div class="col-4"> <button id="equal" onclick="Calculate()">=</button></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
